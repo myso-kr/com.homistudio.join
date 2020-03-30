@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    {% seo %}
+    <meta name="keywords" content="{{ site.keywords }}">
+    {% if site.naver_site_verification %}<meta name="naver-site-verification" content="{{ site.naver_site_verification }}"/>{% endif %}
+    <style>
+      html, body { height: 100%; margin: 0; padding: 0; }
+      iframe { overflow: hidden; display: block; position: absolute; height: 100%; width: 100%; }
+    </style>
+  </head>
+  <body>
+    <iframe id="frame" src="about:blank"
+            frameborder="0" allowfullscreen="true" scrolling="auto" allowtransparency="true" allowpaymentrequest="true"
+            sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts"
+            allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media"
+            >
+      Your browser does not support iframes.
+    </iframe>
+    <script>document.getElementById('frame').src = "{{ site.redirection_url }}" + location.pathname.replace(/\/$/, '') + "?proxyReferer=" + encodeURIComponent(document.referrer) + location.search.replace(/^\?/, '&');</script>
+  </body>
+</html>

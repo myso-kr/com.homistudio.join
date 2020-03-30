@@ -1,0 +1,19 @@
+url:
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+
+lang: ko-KR
+title: 호미스튜디오
+tagline: 취재홍보 마케팅 전문 기업
+description: 취재홍보 마케팅 전문 기업
+keywords: 여행,뷰티,패션,맛집,리뷰,기업취재,인물인터뷰,홍보,기자단,체험단,인플루언서
+
+tab_index: 0
+
+redirection_url: 
+redirection_url_mobile:
+
+naver_site_verification: 
+google_site_verification:
